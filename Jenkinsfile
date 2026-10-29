@@ -3,7 +3,7 @@ pipeline{
     stages{
       trigger("checkout"){
         checkout scm
-        POLLSCM("H/5 * * * * ")
+        POLLSCM(H/5 * * * * )
       }
       stage("build"){
         steps{
